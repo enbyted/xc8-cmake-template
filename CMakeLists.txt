@@ -16,4 +16,5 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wpedantic")
 set(CMAKE_C_FLAGS_DEBUG "-g")
 set(CMAKE_C_FLAGS_RELEASE "-O3")
 
+add_subdirectory(hal/)
 add_subdirectory(app/)

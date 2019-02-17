@@ -6,6 +6,14 @@ set(CMAKE_TOOLCHAIN_FILE external/cmake-microchip/toolchain.cmake)
 # set the default MCU model
 set(MICROCHIP_MCU PIC16F18857)
 
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
 project(xc8-cmake C)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wpedantic")
+set(CMAKE_C_FLAGS_DEBUG "-g")
+set(CMAKE_C_FLAGS_RELEASE "-O3")
 
 add_subdirectory(app/)

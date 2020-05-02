@@ -1,9 +1,9 @@
 #include "configuration_bits.h"
-#include <xc.h>
+#include <hal/hal.h>
 
 void main()
 {
-    LATCbits.LATC1 = 0;
+    hal_init();
     
     while(1) 
     {

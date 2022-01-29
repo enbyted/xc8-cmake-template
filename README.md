@@ -31,7 +31,10 @@ I have my `c_cpp_properties.json` configured as follows:
                 "__PICCPRO__",
                 "__PICC__",
                 "_PIC14E",
-                "HI_TECH_C"
+                "HI_TECH_C",
+                "high_priority=",
+                "low_priority=",
+                "__interrupt(x)="
             ],
             "compilerPath": "C:/Program Files (x86)/Microchip/xc8/v2.00/bin/xc8.exe",
             "cStandard": "c99",
